@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Favourite Songs</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--EQUALIZER BORDER-->
+
+    <div class="equalizer-border">
+
+        <div class="eq-side eq-left">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="eq-side eq-right">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+
+
+    <!--CORNER DECORATIONS-->
+
+    <div class="corner-decor">
+
+        <div class="corner top-left">
+            ✿ ♪ ✿
+        </div>
+
+        <div class="corner top-right">
+            ✿ ♫ ✿
+        </div>
+
+        <div class="corner bottom-left">
+            ✿ ♬ ✿
+        </div>
+
+        <div class="corner bottom-right">
+            ✿ ♪ ✿
+        </div>
+
+    </div>
+
+
+    <!--BACKGROUNDS-->
+
+    <div id="homeBackground" class="background home-background">
+    </div>
+
+    <div id="playerBackground" class="background player-background">
+    </div>
+
+
+    <!--HOME PAGE-->
+
+    <section id="home" class="page active">
+
+        <div class="title-frame">
+            <h1>My Favourite Songs</h1>
+        </div>
+
+
+        <nav>
+
+            <button data-page="home">
+                Home
+            </button>
+
+            <button data-page="playlists">
+                Playlists
+            </button>
+
+        </nav>
+
+
+        <!-- Home search -->
+
+        <div class="search-container">
+
+            <input type="text" id="searchInput" class="search-input" placeholder="Search songs or artists..."
+                autocomplete="off">
+
+        </div>
+
+
+        <!-- Songs -->
+
+        <div id="songGrid" class="grid">
+        </div>
+
+    </section>
+
+
+
+    <!--PLAYLISTS PAGE-->
+
+    <section id="playlists" class="page">
+
+        <div class="title-frame">
+
+            <h1>
+                Playlists
+            </h1>
+
+        </div>
+
+
+        <nav>
+
+            <button data-page="home">
+                Home
+            </button>
+
+            <button data-page="playlists">
+                Playlists
+            </button>
+
+        </nav>
+
+
+        <!-- Playlist search -->
+
+        <div class="search-container">
+
+            <input type="text" id="playlistSearchInput" class="search-input" placeholder="Search playlists..."
+                autocomplete="off">
+
+        </div>
+
+
+        <!--CREATE PLAYLIST BUTTON-->
+
+        <button id="showCreatePlaylistBtn" type="button">
+            + Create Playlist
+        </button>
+
+
+
+        <!--CREATE PLAYLIST FORM-->
+
+        <section id="createPlaylistForm" class="create-playlist hidden">
+
+            <h2>Create a Playlist</h2>
+
+            <p class="create-playlist-subtitle">
+                Give your playlist a name, cover and background video.
+            </p>
+
+            <div class="playlist-form">
+
+                <div class="form-step">
+                    <label for="newPlaylistName">
+                        <span class="step-number">1</span>
+                        Playlist Name
+                    </label>
+
+                    <input type="text" id="newPlaylistName" placeholder="Enter playlist name...">
+                </div>
+
+                <div class="form-step">
+                    <label>
+                        <span class="step-number">2</span>
+                        Playlist Cover
+                    </label>
+
+                    <label class="file-upload">
+                        <input type="file" id="newPlaylistCover" accept="image/*">
+                        <span class="upload-icon">📷</span>
+                        <span>Choose Cover</span>
+                    </label>
+
+                    <span id="playlistCoverFileName" class="selected-file">
+                        No cover selected
+                    </span>
+                </div>
+
+                <div class="form-step">
+                    <label>
+                        <span class="step-number">3</span>
+                        Background Video
+                    </label>
+
+                    <label class="file-upload">
+                        <input type="file" id="newPlaylistVideo" accept="video/*">
+                        <span class="upload-icon">🎬</span>
+                        <span>Choose Video</span>
+                    </label>
+
+                    <span id="playlistVideoFileName" class="selected-file">
+                        No video selected
+                    </span>
+                </div>
+
+                <button id="createPlaylistBtn" type="button" class="create-playlist-btn">
+                    Create Playlist
+                </button>
+
+            </div>
+        </section>
+
+        <!-- ==========================
+             PLAYLIST CARDS
+        =========================== -->
+
+        <div id="playlistGrid" class="grid">
+        </div>
+
+    </section>
+
+
+
+    <!--PLAYLIST SONGS PAGE-->
+
+    <section id="playlistSongs" class="page">
+
+        <!-- Back -->
+
+        <button id="backPlaylists" class="text-btn" type="button">
+            ← Back
+        </button>
+
+
+        <!-- Playlist title -->
+
+        <h1 id="playlistName"></h1>
+
+
+        <!--ADD SONGS-->
+
+        <button id="showAddSongsBtn" class="action-btn" type="button">
+            + Add Songs
+        </button>
+
+
+        <div id="addSongsPanel" class="add-songs-panel hidden">
+
+            <h3>
+                Available Songs
+            </h3>
+
+
+            <div id="availableSongsGrid" class="grid">
+            </div>
+
+        </div>
+
+
+        <!--PLAYLIST SONGS-->
+
+        <div id="playlistSongGrid" class="grid">
+        </div>
+
+    </section>
+
+
+
+    <!--PLAYER-->
+
+    <section id="player" class="player">
+
+        <!-- Decorative player corners -->
+
+        <span class="player-frame-corner frame-top-left">
+            ✦
+        </span>
+
+        <span class="player-frame-corner frame-top-right">
+            ✦
+        </span>
+
+        <span class="player-frame-corner frame-bottom-left">
+            ♪
+        </span>
+
+        <span class="player-frame-corner frame-bottom-right">
+            ♫
+        </span>
+
+        <img id="albumCover" class="cover" alt="Album cover">
+
+        <video id="playerVideo" class="player-video" muted loop playsinline></video>
+
+
+        <!-- Close player -->
+
+        <button id="closePlayer" class="text-btn" type="button">
+            ← Back
+        </button>
+
+
+        <!-- Song information -->
+
+        <h2 id="songTitle"></h2>
+
+        <p id="songArtist"></p>
+
+
+        <!-- Like -->
+
+        <button id="likeSong" class="like-btn" type="button">
+
+            ♡
+
+            <span id="songLikes">
+                0
+            </span>
+
+        </button>
+
+
+        <!--PROGRESS-->
+
+        <div class="progress-container">
+
+            <div id="progress"></div>
+
+        </div>
+
+
+        <div class="times">
+
+            <span id="currentTime">
+                0:00
+            </span>
+
+            <span id="totalTime">
+                0:00
+            </span>
+
+        </div>
+
+
+        <!--CONTROLS-->
+
+        <div class="controls">
+
+            <button id="previous" type="button">
+                ⏮
+            </button>
+
+
+            <button id="play" type="button">
+                ▶
+            </button>
+
+
+            <button id="next" type="button">
+                ⏭
+            </button>
+
+
+            <button id="shuffle" type="button">
+
+                <i class="fa-solid fa-shuffle"></i>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!--AUDIO-->
+
+    <audio id="audio"></audio>
+
+
+
+    <!--JAVASCRIPT-->
+
+    <script src="js/api.js"></script>
+
+    <script src="js/player.js"></script>
+
+    <script src="js/app.js"></script>
+
+
+    <!--SHOW SELECTED FILENAMES-->
+
+    <script>
+
+        const coverInput =
+            document.getElementById(
+                "newPlaylistCover"
+            );
+
+        const videoInput =
+            document.getElementById(
+                "newPlaylistVideo"
+            );
+
+        const coverFileName =
+            document.getElementById(
+                "playlistCoverFileName"
+            );
+
+        const videoFileName =
+            document.getElementById(
+                "playlistVideoFileName"
+            );
+
+
+        if (coverInput) {
+
+            coverInput.addEventListener(
+                "change",
+                () => {
+
+                    if (
+                        coverInput.files.length > 0
+                    ) {
+
+                        coverFileName.textContent =
+                            coverInput.files[0].name;
+
+                    } else {
+
+                        coverFileName.textContent =
+                            "No cover selected";
+
+                    }
+
+                }
+            );
+
+        }
+
+
+        if (videoInput) {
+
+            videoInput.addEventListener(
+                "change",
+                () => {
+
+                    if (
+                        videoInput.files.length > 0
+                    ) {
+
+                        videoFileName.textContent =
+                            videoInput.files[0].name;
+
+                    } else {
+
+                        videoFileName.textContent =
+                            "No video selected";
+
+                    }
+
+                }
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>

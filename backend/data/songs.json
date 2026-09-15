@@ -1,0 +1,230 @@
+{
+    "songs": [
+        {
+            "id": 1,
+            "title": "of everyone in the world...",
+            "artist": "Forest Nolan",
+            "cover": "http://localhost:3000/assets/covers/cover1.jpg",
+            "file": "http://localhost:3000/assets/music/song1.mp3",
+            "likes": 0
+        },
+        {
+            "id": 2,
+            "title": "the feeling",
+            "artist": "Steve Lacy",
+            "cover": "http://localhost:3000/assets/covers/cover2.jpg",
+            "file": "http://localhost:3000/assets/music/song2.mp3",
+            "likes": 3
+        },
+        {
+            "id": 3,
+            "title": "All I Have",
+            "artist": "Amarie",
+            "cover": "http://localhost:3000/assets/covers/cover3.jpg",
+            "file": "http://localhost:3000/assets/music/song3.mp3",
+            "likes": 1
+        },
+        {
+            "id": 4,
+            "title": "Let Me",
+            "artist": "Victoria Monet",
+            "cover": "http://localhost:3000/assets/covers/cover4.jpg",
+            "file": "http://localhost:3000/assets/music/song4.mp3",
+            "likes": 1
+        },
+        {
+            "id": 5,
+            "title": "Stay",
+            "artist": "Gracie Abrams",
+            "cover": "http://localhost:3000/assets/covers/cover5.jpg",
+            "file": "http://localhost:3000/assets/music/song5.mp3",
+            "likes": 0
+        },
+        {
+            "id": 6,
+            "title": "Boys",
+            "artist": "Flowerovlove",
+            "cover": "http://localhost:3000/assets/covers/cover6.jpg",
+            "file": "http://localhost:3000/assets/music/song6.mp3",
+            "likes": 0
+        },
+        {
+            "id": 7,
+            "title": "When You Love Someone ft.HER",
+            "artist": "Tone Stith",
+            "cover": "http://localhost:3000/assets/covers/cover7.jpg",
+            "file": "http://localhost:3000/assets/music/song7.mp3",
+            "likes": 0
+        },
+        {
+            "id": 8,
+            "title": "My Heart",
+            "artist": "Odeal",
+            "cover": "http://localhost:3000/assets/covers/cover8.jpg",
+            "file": "http://localhost:3000/assets/music/song8.mp3",
+            "likes": 0
+        },
+        {
+            "id": 9,
+            "title": "Wishes",
+            "artist": "Tiny Habits",
+            "cover": "http://localhost:3000/assets/covers/cover9.jpg",
+            "file": "http://localhost:3000/assets/music/song9.mp3",
+            "likes": 1
+        },
+        {
+            "id": 10,
+            "title": "2 You",
+            "artist": "Mariah the Scientist",
+            "cover": "http://localhost:3000/assets/covers/cover10.jpg",
+            "file": "http://localhost:3000/assets/music/song10.mp3",
+            "likes": 0
+        },
+        {
+            "id": 11,
+            "title": "He's Not Me",
+            "artist": "Dylan Sinclar",
+            "cover": "http://localhost:3000/assets/covers/cover11.jpg",
+            "file": "http://localhost:3000/assets/music/song11.mp3",
+            "likes": 0
+        },
+        {
+            "id": 12,
+            "title": "Cyanide",
+            "artist": "Danial Caesar",
+            "cover": "http://localhost:3000/assets/covers/cover12.jpg",
+            "file": "http://localhost:3000/assets/music/song12.mp3",
+            "likes": 0
+        },
+        {
+            "id": 13,
+            "title": "Escape",
+            "artist": "Kehlani",
+            "cover": "http://localhost:3000/assets/covers/cover13.jpg",
+            "file": "http://localhost:3000/assets/music/song13.mp3",
+            "likes": 0
+        },
+        {
+            "id": 14,
+            "title": "U, Me & My Ego",
+            "artist": "Chxrry",
+            "cover": "http://localhost:3000/assets/covers/cover14.jpg",
+            "file": "http://localhost:3000/assets/music/song14.mp3",
+            "likes": 0
+        },
+        {
+            "id": 15,
+            "title": "Masschuesetts",
+            "artist": "Jensen McRae",
+            "cover": "http://localhost:3000/assets/covers/cover15.jpg",
+            "file": "http://localhost:3000/assets/music/song15.mp3",
+            "likes": 0
+        },
+        {
+            "id": 16,
+            "title": "Keep It To Yourself",
+            "artist": "Love Spells",
+            "cover": "http://localhost:3000/assets/covers/cover16.jpg",
+            "file": "http://localhost:3000/assets/music/song16.mp3",
+            "likes": 0
+        },
+        {
+            "id": 17,
+            "title": "Human Nature",
+            "artist": "Michael Jackson",
+            "cover": "http://localhost:3000/assets/covers/cover17.jpg",
+            "file": "http://localhost:3000/assets/music/song17.mp3",
+            "likes": 0
+        },
+        {
+            "id": 18,
+            "title": "The Most Beautiful Girl In The World",
+            "artist": "Prince",
+            "cover": "http://localhost:3000/assets/covers/cover18.jpg",
+            "file": "http://localhost:3000/assets/music/song18.mp3",
+            "likes": 0
+        },
+        {
+            "id": 19,
+            "title": "When You Touch Me",
+            "artist": "Brandy",
+            "cover": "http://localhost:3000/assets/covers/cover19.jpg",
+            "file": "http://localhost:3000/assets/music/song19.mp3",
+            "likes": 0
+        },
+        {
+            "id": 20,
+            "title": "Try Sleeping With A Broken Heart",
+            "artist": "Alicia Keys",
+            "cover": "http://localhost:3000/assets/covers/cover20.jpg",
+            "file": "http://localhost:3000/assets/music/song20.mp3",
+            "likes": 0
+        },
+        {
+            "id": 21,
+            "title": "Telepathy",
+            "artist": "Christina Aguilera",
+            "cover": "http://localhost:3000/assets/covers/cover21.jpg",
+            "file": "http://localhost:3000/assets/music/song21.mp3",
+            "likes": 0
+        },
+        {
+            "id": 22,
+            "title": "Schoolin' Life",
+            "artist": "Beyonce",
+            "cover": "http://localhost:3000/assets/covers/cover22.jpg",
+            "file": "http://localhost:3000/assets/music/song22.mp3",
+            "likes": 0
+        }
+    ],
+    "playlists": [
+        {
+            "id": 1,
+            "name": "Chill Songs",
+            "cover": "http://localhost:3000/assets/playlist-covers/chill.jpg",
+            "video": "http://localhost:3000/assets/videos/chill.mp4",
+            "songs": [
+                2,
+                "3",
+                "5",
+                "8",
+                "11",
+                "10",
+                "17",
+                7,
+                13
+            ],
+            "likes": 1
+        },
+        {
+            "id": 2,
+            "name": "Night Drive",
+            "cover": "http://localhost:3000/assets/playlist-covers/night-drive.jpg",
+            "video": "http://localhost:3000/assets/videos/night-drive.mp4",
+            "songs": [
+                2,
+                3,
+                16,
+                9,
+                "5",
+                "11",
+                19
+            ],
+            "likes": 2
+        },
+        {
+            "id": 1788281357752,
+            "name": "Love",
+            "cover": "/uploads/playlist-covers/1788281341665-littlemisskenny-----------------on-tiktok.jpg",
+            "video": "/uploads/playlist-videos/1788281341688-video-project-5.mp4",
+            "songs": [
+                4,
+                21,
+                18,
+                "13",
+                7
+            ],
+            "likes": 1
+        }
+    ]
+}
